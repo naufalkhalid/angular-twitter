@@ -1,0 +1,22 @@
+<clr-main-container>
+  <clr-header class="header-1">
+    <div class="branding">
+      <a class="nav-link">
+        <div class="title">Twitter Angular Client</div>
+      </a>
+    </div>
+    <div class="header-actions" *ngIf="user">
+      <a class="nav-link">
+        <span class="nav-text">
+          <img [src]="user.profile_image_url_https" class="avatar" />
+          @{{user.screen_name}}
+        </span>
+      </a>
+    </div>
+  </clr-header>
+  <div class="content-container">
+    <main class="content-area">
+      <app-tweets></app-tweets>
+    </main>
+  </div>
+</clr-main-container>

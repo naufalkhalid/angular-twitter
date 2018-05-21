@@ -1,0 +1,36 @@
+.card-header {
+  padding: 0;
+
+  .retweeted {
+    font-size: 0.5rem;
+    font-style: italic;
+  }
+
+  .card-header-actions {
+    float: right;
+  }
+}
+.card-block {
+  display: grid;
+  
+}
+.card-img {
+  grid-area: photo;
+  
+}
+.card-text {
+  grid-area: text;
+}
+
+::ng-deep {
+    .modal-body {
+        text-align: center;
+        img {
+            max-width: 100%;
+        }
+    }
+    .modal-footer {
+        padding: 0;
+        text-align: left;
+    }
+}
